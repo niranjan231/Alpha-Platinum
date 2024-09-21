@@ -1,0 +1,13 @@
+.cat-2 img{
+    width: 200px;
+    height: 200px;
+    margin-left: 85px;
+    margin-top: 40px;
+    border-radius: 50%;
+    border: 2px solid  #49A6A2;
+    margin-bottom: 25px;
+}
+.cat-1{
+    display: flex;
+    flex-wrap: wrap;
+}

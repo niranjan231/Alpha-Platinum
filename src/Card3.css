@@ -1,0 +1,74 @@
+.card3-1{
+    display: flex;
+    margin-top: 30px;
+}
+.card3-10{
+    margin-left: 200px;
+    position: relative;
+}
+.card3-1 img{
+    width: 250px;
+    height: 300px;
+    margin-left: 65px;
+    margin-top: 50px;
+}
+.card3-star{
+    font-size: 20px;
+    color: rgb(255, 123, 0);
+}
+.card3-1 h3{
+   
+}
+.card3-4{
+    display: flex;
+   margin-top: 20px;
+}
+.card3-4 input{
+    width: 300px;
+    height: 40px;
+    border: 2px solid  #49A6A2;
+}
+.card3-4 button{
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    color:  #49A6A2;
+    border: 2px solid  #49A6A2;
+    background-color: white;
+}
+.card3-5{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid  #49A6A2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.card3-5 button{
+    width: 30px;
+    background-color: white;
+    outline: 0;
+    /* display: none; */
+    border-color: white;
+}
+.card3-6{
+    margin-top: 25px;
+}
+.card3-6 button{
+    width: 150px;
+    height: 45px;
+}
+.card3-btn1{
+    border: 2px solid red;
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+}
+.card3-btn2{
+    border: 2px solid #49A6A2;
+    color: #49A6A2;
+    background-color:  white;
+    border-radius: 10px;
+    margin-left: 10px;
+}

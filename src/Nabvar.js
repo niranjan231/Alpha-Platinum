@@ -1,8 +1,13 @@
+import { useState } from "react";
 import "./Nabvar.css";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { FaCartPlus } from "react-icons/fa6";
 import { TiThMenu } from "react-icons/ti";
+import Login from "./Login";
+import data from "./data";
+
+
 
 
 
@@ -11,6 +16,17 @@ import { TiThMenu } from "react-icons/ti";
 
 
 const Nabvar=()=>{
+    const [login , setLogin] = useState(false)
+    const [catgry , setCatgry] = useState(data)
+    const UpdateItem=(carditem)=>{
+const filterCatogery = data.filter((curdItem)=>{
+    return curdItem.text === carditem
+})
+setCatgry(filterCatogery)
+    }
+    const handleLoginBtn=()=>{
+        setLogin(true);
+    }
     return (
         <>
        <div className="nav-1">
@@ -21,7 +37,7 @@ const Nabvar=()=>{
         </div>
 
 <div className="nav-7">
-        <div><button className="nav-4-btn">Login</button></div>
+        <div><button onClick={handleLoginBtn} className="nav-4-btn">Login</button></div>
         <sapn className="nav-5-span"><CiHeart /></sapn>
         <span className="nav-6-span"><FaCartPlus /></span>
         </div>
@@ -29,16 +45,33 @@ const Nabvar=()=>{
        </div>
 
        <div className="nav-10">
-<span><TiThMenu />SEE ALL</span>
+<span  onClick={()=>setCatgry(data)}><TiThMenu />SEE ALL</span>
 <span>|</span>
-<span>Clothing</span>
-<span>Eloctronic</span>
-<span>Home Kitchen</span>
-<span>Beauty and persnoal care</span>
-<span>Toy & Game</span>
-<span>Clothing</span>
-<span>Grocry & Gurment Food</span>
+<span onClick={()=>UpdateItem("Clothing")}>Clothing</span>
+<span onClick={()=>UpdateItem("Electronics")}>Eloctronic</span>
+<span onClick={()=>UpdateItem("Home & Kitchen")}>Home Kitchen</span>
+<span onClick={()=>UpdateItem("Beauty & Personal Care")}>Beauty and persnoal care</span>
+<span onClick={()=>UpdateItem("Toys & Games")}>Toy & Game</span>
+<span onClick={()=>UpdateItem("Grocery & Gourmet Food")}>Grocry & Gurment Food</span>
+<span onClick={()=>UpdateItem("Books")}>Book</span>
        </div>
+
+
+       <div className="cat-1">
+         {
+            catgry.map((item4)=>{
+                return  <div className="cat-2"><img src={item4.image}></img><p>{item4.text}</p></div>
+            })
+         }
+        </div>
+
+
+
+
+
+       {
+        login && <Login/>
+       }
        </>
     )
 }

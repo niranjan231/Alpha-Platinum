@@ -1,0 +1,22 @@
+.new-1{
+    width: 100vw;
+    height: 150px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   /* color: black; */
+  /* border-top: 2 solid rgba(0, 0, 0, 0.18); */
+  border: 2px solid rgba(0, 0, 0, 0.059);
+
+
+}
+.new-1 h2{
+    font-weight: 700;
+}
+.new-2 p{
+    margin-top: 125px;
+    margin-left: 300px;
+    color:  #49A6A2;
+    font-weight: 800;
+}

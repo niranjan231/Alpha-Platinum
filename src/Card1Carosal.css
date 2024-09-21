@@ -1,0 +1,17 @@
+.card-carosal-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid  #49A6A2;
+}
+.card-carosal-h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+Swiper{
+    outline: 0;
+    display: none;
+}
+/* .Carosal-1212{
+    height: 350px;
+} */
