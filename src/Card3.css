@@ -1,15 +1,42 @@
 .card3-1{
+    position: fixed;
+    /* top: 500; */
+    z-index: 1;
+    /* z-index: 700; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    margin-top: 30px;
+    margin-top: 35px;
+    color: black;
+    /* margin-right: 100px; */
+    background-color: white;
+}
+.modal-h2{
+    /* margin-bottom: 5px; */
+    cursor: pointer;
+}
+.span-clas{
+  color: white;
+  margin-bottom: 200px;
+  position: fixed;
+}
+.show-Modal-body{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.753);
 }
 .card3-10{
     margin-left: 200px;
-    position: relative;
 }
 .card3-1 img{
     width: 250px;
     height: 300px;
-    margin-left: 65px;
+    /* margin-left: 65px; */
     margin-top: 50px;
 }
 .card3-star{
@@ -44,6 +71,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    color: black;
 }
 .card3-5 button{
     width: 30px;

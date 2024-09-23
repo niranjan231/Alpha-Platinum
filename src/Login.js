@@ -4,7 +4,7 @@ import "./Login.css";
 
 
 
-const Login=()=>{
+const Login=({outLoginPage})=>{
     return (
         <>
         <div className="login"></div>
@@ -16,7 +16,7 @@ const Login=()=>{
            <div className="login-3">
            <input type="text" placeholder="Mobile Number"></input>
            <input type="text" placeholder="Pasword"></input>
-           <button>Login</button>
+           <button onClick={outLoginPage}>Login</button>
            </div>
         </div>
         </>

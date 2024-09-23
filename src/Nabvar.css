@@ -43,6 +43,7 @@
 .nav-8{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     text-align: center;
     /* align-items: center; */
 }

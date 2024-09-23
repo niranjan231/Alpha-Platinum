@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import Card3 from './Card3';
 import './App.css';
 // import Nabvar from './Nabvar';
 // import Carosal1 from './Carosal1';
@@ -7,7 +8,8 @@ import './App.css';
 import Home from './Home';
 import Nabvar from './Nabvar';
 import Footer from './Footer';
-// import Catogery from './Catogery';
+import { Routes, Route } from 'react-router-dom';
+import Catogery from './Catogery';
 
 
 
@@ -17,10 +19,15 @@ import Footer from './Footer';
 function App() {
   return (
     <div>
-      {/* <Nabvar/> */}
-      <Home/>
+      <Nabvar/>
+      {/* <Home/> */}
       {/* <Catogery/> */}
-      {/* <Footer/> */}
+      <Routes>
+        <Route path='/card3' element={<Card3/>}/>
+        <Route path='/catogery' element={<Catogery/>}/>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+      <Footer/>
     </div>
   );
 }

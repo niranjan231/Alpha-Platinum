@@ -33,10 +33,10 @@ const Footer=()=>{
 <div className="foot-4">
     <h4>Conect with Us</h4>
     <div className="foot-5">
-        <spam className="facebook-1">< FaFacebook /></spam>
-        <spam className="twiter-1"><FaTwitter /></spam>
-        <spam className="linkdine-1"><FaLinkedin /></spam>
-        <spam className="youtube-1"><FaYoutube /></spam>
+    <a href="https://www.facebook.com/"><spam className="facebook-1">< FaFacebook /></spam></a>
+        <a href="hthttps://x.com/"><spam className="twiter-1"><FaTwitter /></spam></a>
+        <a href="https://www.instagram.com/"><spam className="linkdine-1"><FaLinkedin /></spam></a>
+        <a href="https://www.facebook.com/"><spam className="youtube-1"><FaYoutube /></spam></a>
     </div>
 
 </div>
