@@ -10,6 +10,8 @@ import Nabvar from './Nabvar';
 import Footer from './Footer';
 import { Routes, Route } from 'react-router-dom';
 import Catogery from './Catogery';
+import Demo5 from './Demo5';
+// import DropFilter from './DropFilter';
 
 
 
@@ -26,6 +28,7 @@ function App() {
         <Route path='/card3' element={<Card3/>}/>
         <Route path='/catogery' element={<Catogery/>}/>
         <Route path='/' element={<Home/>}/>
+        <Route path='/demo5' element={<Demo5/>}/>
       </Routes>
       <Footer/>
     </div>

@@ -39,8 +39,8 @@ const Card3=({detale,BackHome})=>{
                             <span>(0 Review)</span>
                             <h5>Rs {result.price}</h5>
                             <strike>Rs 565</strike>
-                            <div className="card3-4"><input placeholder="ZipCode" required></input> <button>Check Aligbalty</button></div>
-                            <div className="card3-5"><button onClick={decresBtn}>-</button>787<button onClick={incrsBtn}>+</button></div>
+                            <div className="card3-4"><input placeholder="ZipCode"></input> <button>Check Aligbalty</button></div>
+                            <div className="card3-5"><button onClick={decresBtn}>-</button>{count}<button onClick={incrsBtn}>+</button></div>
                             <div className="card3-6"><button className="card3-btn1">Add to Cart</button><button className="card3-btn2">Add to Favorite</button></div>
                             <p>Seler <strike>Raj Babbar</strike></p>
                             </div>

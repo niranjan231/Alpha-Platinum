@@ -5,6 +5,8 @@ import NewProduct from './NewProduct';
 import Card2 from './Card2';
 // import Card3 from './Card3';
 import Download from './Download';
+import DropFilter from './DropFilter';
+// import Demo5 from "./Demo5";
 
 
 
@@ -19,6 +21,8 @@ const Home=()=>{
       <Card2/>
       <Download/>
       {/* <Card3/> */}
+      {/* <DropFilter/> */}
+      {/* <Demo5/> */}
         </div>
     )
 }
